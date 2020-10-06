@@ -1,0 +1,104 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/webcss.css' %}">
+    <title>61010466_web</title>
+</head>
+<body>
+    <header><img class ="logo" src="{% static 'image/news-logo.jpg' %}" alt=""></header>
+
+           <!-- menubar  -->
+    <div class="container">
+        <nav>
+            
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a class="login"href="#">login</a>
+            
+            
+
+ </nav>
+</div>
+    {% block content %}
+    {% endblock %}
+      
+
+        <div class="container news">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="header-square">
+                        <span></span>
+                        <div class="header-text">Popular News</div>
+                    </div>
+                    <!-- news-row -->
+                <div class="row news-row">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="{% static 'image/trump-news.jpg' %}" alt="">
+                    </div>
+                <div class="col-md-8">
+                    <div class="news-row-title">Breaking News! Donald Trump Tests Positive for Covid-19! Dow Futures Drop 2%
+</div>
+                    <div class="news-row-excerpt">“Tonight, @FLOTUS and I tested positive for COVID-19. We will begin our quarantine and recovery process immediately. We will get through this TOGETHER
+
+                       </div>
+                </div>
+            </div>
+            <div class="row news-row">
+                <div class="col-md-4">
+                    <img class="img-responsive" src="{% static 'image/spotify-news.jpg' %}" alt="">
+                </div>
+            <div class="col-md-8">
+                <div class="news-row-title">Spotify will now let you search using lyrics so you can find that one song stuck in your head
+                </div>
+                <div class="news-row-excerpt">For those times when you’re constantly singing a line of a song but just can’t remember what song those lyrics came from, Spotify can now help you with that.</div>
+            </div>
+        </div>
+        <div class="row news-row">
+            <div class="col-md-4">
+                <img class="img-responsive" src="{% static 'image/corona-news.jpg' %}" alt="">
+            </div>
+        <div class="col-md-8">
+            <div class="news-row-title">ข่าวใหญ่</div>
+            <div class="news-row-excerpt">ผ่านมาแล้วกว่า 8 เดือนแล้วที่เชื้อไวรัสโคโรนาสายพันธุ์ใหม่ หรือ โควิด-19 อุบัติขึ้นและระบาดไปเกือบทั่วโลก จนกระทั่งองค์การอนามัยโลก (WHO) ประกาศให้การแพร่ระบาดของเชื้อไวรัสโคโรนาสายพันธุ์ใหม่เป็น "การระบาดใหญ่" หรือ pandemic เมื่อวันที่ 11 มี.ค.</div>
+        </div>
+    </div>
+    <div class="row news-row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{% static 'image/break-new.jpg' %}" alt="">
+        </div>
+    <div class="col-md-8">
+        <div class="news-row-title">Trump Covid: President downplays virus on leaving hospital</div>
+        <div class="news-row-excerpt">US President Donald Trump has made a theatrical return to the White House to continue his treatment for coronavirus after a three-night hospital stay.</div>
+    </div>
+</div>
+                </div>
+
+                
+                
+
+            <!-- Right -->
+                   <div class="col-md-4">
+                    <div class="header-square header-small">
+                        <span></span>
+                        <div class="header-text">Search</div>
+                    </div>
+                    <div class="search-form-container">
+                        <div class="search-form"><input type="text" placeholder="search" class="form-control"></div>
+                    </div>
+                    
+                    
+
+                </div>
+        </div>
+                        
+</body>
+</html>

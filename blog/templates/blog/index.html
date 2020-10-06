@@ -1,0 +1,46 @@
+{% extends 'blog/web.html' %}
+{% load static %}
+{% block content %}
+    <!-- news-item -->
+<div class="news-container container">
+    <div class="row">
+      <div class="col-md-4 news">
+        <img src="{% static 'image/corona1-news.jpg' %}" alt="">
+        <div class="news-title">EU leader enters self-isolation
+        </div>
+            <div class="excerpt">European Commission President Ursula von der Leyen is self-isolating after participating in a meeting that was attended by a person who subsequently tested positive for Covid-19, she announced on Twitter.</div>
+        </div>
+        <div class="col-md-4 news">
+            <img src="{% static 'image/tasmanian-news.jpg' %}" alt="">
+            <div class="news-title">Tasmanian devils  </div>
+                <div class="excerpt">Eleven Tasmanian devils have been reintroduced to mainland Australia, more than 3,000 years after they died out there.</div>
+            </div>
+            <div class="col-md-4 news">
+                <img src="{% static 'image/golf-news.jpg' %}" alt="">
+                <div class="news-title">Winning putt with eyes closed</div>
+                    <div class="excerpt">He hadn't had a win on the PGA Tour since the 2017 Masters. As he rolled in the three-foot putt to seal the Sanderson Farms Championship in Mississippi on Sunday, the cameras showed the 40-year-old had his eyes closed.</div>
+                </div>
+                <div class="col-md-4 news">
+                    <img src="{% static 'image/soulmate-news.jpg' %}" alt="">
+                    <div class="news-title">Soulmates paints a future </div>
+                        <div class="excerpt">"Soulmates" is an especially savvy concept, and among the best anthology series to come along in a while amid a flurry of mostly mediocre ones. At its core is the idea of better living through science -- what would you do if there was a test to identify your soulmate? </div>
+                    </div>
+                    <div class="col-md-4 news">
+                        <img src="{% static 'image/avatar-news.jpg' %}" alt="">
+                        <div class="news-title">'Avatar 3' is almost done filming
+                        </div>
+                            <div class="excerpt">"Avatar 2" is finished filming and "Avatar 3" is nearly done, director James Cameron has revealed.
+
+                                In a video chat with former California Governor Arnold Schwarzenegger for the 2020 Austrian World Summit</div>
+                        </div>
+                        <div class="col-md-4 news">
+                            <img src="{% static 'image/exxon-news.jpg' %}" alt="">
+                            <div class="news-title">This solar replaced Exxon 
+                            </div>
+                                <div class="excerpt">The clean energy revolution just hit another major milestone. Solar and wind company NextEra Energy dethroned ExxonMobil as America’s most valuable energy company.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                            <!-- end-news -->
+{% endblock %}               
